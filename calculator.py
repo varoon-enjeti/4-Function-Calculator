@@ -177,7 +177,7 @@ class Calculator(Tk):
                     self.var_2_pos = "open"
                     self.op_var.set("")
                 else:
-                    out = float(var1)/float(var2)
+                    out = round(float(var1)/float(var2), 5)
                     self.screen_var.set(str(out))
                     self.screen["text"] = self.screen_var.get()
                     self.var_1.set(str(out))
